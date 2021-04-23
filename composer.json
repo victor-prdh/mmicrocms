@@ -1,0 +1,15 @@
+{
+    "name": "victor/mmicrocms",
+    "description": "a micro cms for mmi",
+    "type": "project",
+    "authors": [
+        {
+            "name": "prudhomme victor",
+            "email": "victor.prudhomme60600@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"App\\": "mmicrocms/"}
+    }
+}
