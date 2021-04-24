@@ -51,10 +51,13 @@ class Router
             unset($path[0]);
             
             foreach($path as $p){
-                if($p[0] == ":"){ //path have a variable
-                    $pathVar = true;
-                    $varName = substr($p, 1);
-                } 
+                if(!empty($p[0])){
+                    if($p[0] == ":"){ //path have a variable
+                        $pathVar = true;
+                        $varName = substr($p, 1);
+                    } 
+                }
+                
             }
 
             if($pathVar == false) { //No path Variable => simple check
@@ -75,7 +78,6 @@ class Router
 
                            $check++; 
                            if($path[$i][0] == ":"){
-                               echo "alert";
                                $varPath = $url[$i];
                            }
                         } else {

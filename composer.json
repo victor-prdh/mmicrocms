@@ -1,6 +1,6 @@
 {
-    "name": "victor/mmicrocms",
-    "description": "a micro cms for mmi",
+    "name": "victor/mmicr",
+    "description": "a micro framework for mmi",
     "type": "project",
     "authors": [
         {
@@ -10,6 +10,6 @@
     ],
     "require": {},
     "autoload": {
-        "psr-4": {"App\\": "mmicrocms/"}
+        "psr-4": {"App\\": "mmicro/"}
     }
 }

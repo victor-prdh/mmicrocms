@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit8b51769ef12709dd82a9f65338522c91
+class ComposerStaticInitb39a78b3fe5ca5b983dea6f57b9c77d3
 {
     public static $prefixLengthsPsr4 = array (
         'A' => 
@@ -16,15 +16,20 @@ class ComposerStaticInit8b51769ef12709dd82a9f65338522c91
     public static $prefixDirsPsr4 = array (
         'App\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/mmicrocms',
+            0 => __DIR__ . '/../..' . '/mmicro',
         ),
+    );
+
+    public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit8b51769ef12709dd82a9f65338522c91::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit8b51769ef12709dd82a9f65338522c91::$prefixDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitb39a78b3fe5ca5b983dea6f57b9c77d3::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitb39a78b3fe5ca5b983dea6f57b9c77d3::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitb39a78b3fe5ca5b983dea6f57b9c77d3::$classMap;
 
         }, null, ClassLoader::class);
     }
